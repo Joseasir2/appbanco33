@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credito</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <style>
+        .form-label {
+            display: inline-block;
+            width: 150px; 
+            margin-bottom: 0; 
+        }
+        .custom-input {
+            width: 300px; 
+        }
+
+        body {
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col-md-6">
+               <div class="card" id="hipoteca">
+                   <div class="card-body">
+                       <h5 class="card-title">Calculadora de Hipoteca</h5>
+                       <form action="#" id="hipoteca" onsubmit="return calcularhipoteca(event)" method="get" target="_self">
+                           <div class="form-group">
+                               <label for="cuota" class="form-label">Cuota inicial</label>
+                               <input type="text" name="" id="cuota" class="form-control custom-input">
+                           </div>
+                           <div class="form-group">
+                               <label for="valortotal" class="form-label">Valor vivienda</label>
+                               <input type="text" name="" id="valortotal" class="form-control custom-input">
+                           </div>
+                           <div class="form-group">
+                               <label for="interes" class="form-label">Intereses</label>
+                               <input type="text" name="" id="interes" class="form-control custom-input">
+                           </div>
+                           <div class="form-group">
+                               <label for="plazo" class="form-label">Plazo</label>
+                               <input type="text" name="" id="plazo" class="form-control custom-input">
+                           </div>
+                           <button type="submit" class="btn btn-success">Calcular</button>
+                           <button type="button" class="btn btn-secondary" onclick="resetform()">Resetear</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-6">
+               <div class="card" id="resultado">
+                   <div class="card-body">
+                       <h5 class="card-title">Resultados</h5>
+                       <label for="tprestamo">Total préstamo: €</label>
+                       <output id="tprestamo"></output><br>
+                       <label for="tmensual">Cuota mensual: €</label>
+                       <output id="tmensual"></output>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <script src="js/hipoteca.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+

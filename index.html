@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 400px;
+            margin-bottom: 10px;
+        }
+        figcaption {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <figure>
+            <img src="img/logo.png" alt="Logo del Banco Noso">
+        </figure>
+        <h1>Bienvenido!</h1>
+        <p>Esta aplicación está diseñada para facilitar su trabajo diario. Aquí podrá gestionar incidencias, seguros y calcular hipotecas de manera rápida y eficiente.</p>
+        <p>Para comenzar, haga clic en el botón a continuación y será redirigido a la página principal.</p>
+        <button onclick="location.href='principal.html'">Ir a la Página Principal</button>
+        <footer>
+            &copy; 2024 Banco Noso. Todos los derechos reservados.
+        </footer>
+    </div>
+</body>
+</html>
